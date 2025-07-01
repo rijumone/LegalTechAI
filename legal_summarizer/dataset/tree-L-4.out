@@ -1,0 +1,1538 @@
+.
+├── IN-Abs
+│   ├── test-data
+│   │   ├── judgement
+│   │   │   ├── 1181.txt
+│   │   │   ├── 1195.txt
+│   │   │   └── 784.txt
+│   │   ├── stats-IN-test.txt
+│   │   └── summary
+│   │       ├── 1181.txt
+│   │       ├── 1195.txt
+│   │       └── 784.txt
+│   └── train-data
+│       ├── judgement
+│       │   ├── 1.txt
+│       │   ├── 10.txt
+│       │   ├── 998.txt
+│       │   └── 999.txt
+│       ├── stats-IN-train.txt
+│       └── summary
+│           ├── 1.txt
+│           ├── 10.txt
+│           ├── 998.txt
+│           └── 999.txt
+├── IN-Ext
+│   ├── IN-EXT-length.txt
+│   ├── judgement
+│   │   ├── 1953_L_1.txt
+│   │   ├── 1953_S_23.txt
+│   │   ├── 2015_J_10.txt
+│   │   └── 2015_S_368.txt
+│   └── summary
+│       ├── full
+│       │   ├── A1
+│       │   └── A2
+│       └── segment-wise
+│           ├── A1
+│           └── A2
+├── tree-L-4.out
+└── UK-Abs
+    ├── test-data
+    │   ├── judgement
+    │   │   ├── uksc-2009-0022.txt
+    │   │   ├── uksc-2009-0073.txt
+    │   │   ├── uksc-2009-0105.txt
+    │   │   ├── uksc-2009-0118.txt
+    │   │   ├── uksc-2009-0125.txt
+    │   │   ├── uksc-2009-0127.txt
+    │   │   ├── uksc-2009-0129.txt
+    │   │   ├── uksc-2009-0152.txt
+    │   │   ├── uksc-2009-0167.txt
+    │   │   ├── uksc-2009-0180.txt
+    │   │   ├── uksc-2010-0039.txt
+    │   │   ├── uksc-2010-0106.txt
+    │   │   ├── uksc-2010-0127.txt
+    │   │   ├── uksc-2010-0128.txt
+    │   │   ├── uksc-2010-0154.txt
+    │   │   ├── uksc-2010-0189.txt
+    │   │   ├── uksc-2010-0201.txt
+    │   │   ├── uksc-2010-0231.txt
+    │   │   ├── uksc-2010-0236.txt
+    │   │   ├── uksc-2010-0244.txt
+    │   │   ├── uksc-2011-0011.txt
+    │   │   ├── uksc-2011-0024.txt
+    │   │   ├── uksc-2011-0046.txt
+    │   │   ├── uksc-2011-0089.txt
+    │   │   ├── uksc-2011-0115.txt
+    │   │   ├── uksc-2011-0117.txt
+    │   │   ├── uksc-2011-0196.txt
+    │   │   ├── uksc-2011-0233.txt
+    │   │   ├── uksc-2011-0244.txt
+    │   │   ├── uksc-2011-0260.txt
+    │   │   ├── uksc-2012-0007.txt
+    │   │   ├── uksc-2012-0025.txt
+    │   │   ├── uksc-2012-0072.txt
+    │   │   ├── uksc-2012-0109.txt
+    │   │   ├── uksc-2012-0124.txt
+    │   │   ├── uksc-2012-0143.txt
+    │   │   ├── uksc-2012-0162.txt
+    │   │   ├── uksc-2012-0179.txt
+    │   │   ├── uksc-2012-0181.txt
+    │   │   ├── uksc-2012-0247.txt
+    │   │   ├── uksc-2012-0249.txt
+    │   │   ├── uksc-2012-0250.txt
+    │   │   ├── uksc-2013-0006.txt
+    │   │   ├── uksc-2013-0023.txt
+    │   │   ├── uksc-2013-0036.txt
+    │   │   ├── uksc-2013-0057.txt
+    │   │   ├── uksc-2013-0083.txt
+    │   │   ├── uksc-2013-0158.txt
+    │   │   ├── uksc-2013-0161.txt
+    │   │   ├── uksc-2013-0243.txt
+    │   │   ├── uksc-2013-0266.txt
+    │   │   ├── uksc-2013-0273.txt
+    │   │   ├── uksc-2014-0023.txt
+    │   │   ├── uksc-2014-0073.txt
+    │   │   ├── uksc-2014-0079.txt
+    │   │   ├── uksc-2014-0087.txt
+    │   │   ├── uksc-2014-0089.txt
+    │   │   ├── uksc-2014-0094.txt
+    │   │   ├── uksc-2014-0110.txt
+    │   │   ├── uksc-2014-0138.txt
+    │   │   ├── uksc-2014-0159.txt
+    │   │   ├── uksc-2014-0231.txt
+    │   │   ├── uksc-2015-0057.txt
+    │   │   ├── uksc-2015-0063.txt
+    │   │   ├── uksc-2015-0082.txt
+    │   │   ├── uksc-2015-0177.txt
+    │   │   ├── uksc-2015-0214.txt
+    │   │   ├── uksc-2015-0216.txt
+    │   │   ├── uksc-2015-0238.txt
+    │   │   ├── uksc-2015-0255.txt
+    │   │   ├── uksc-2016-0004.txt
+    │   │   ├── uksc-2016-0048.txt
+    │   │   ├── uksc-2016-0052.txt
+    │   │   ├── uksc-2016-0080.txt
+    │   │   ├── uksc-2016-0082.txt
+    │   │   ├── uksc-2016-0210.txt
+    │   │   ├── uksc-2016-0213.txt
+    │   │   ├── uksc-2017-0006.txt
+    │   │   ├── uksc-2017-0031.txt
+    │   │   ├── uksc-2017-0040.txt
+    │   │   ├── uksc-2017-0073.txt
+    │   │   ├── uksc-2017-0075.txt
+    │   │   ├── uksc-2017-0083.txt
+    │   │   ├── uksc-2017-0096.txt
+    │   │   ├── uksc-2017-0106.txt
+    │   │   ├── uksc-2017-0110.txt
+    │   │   ├── uksc-2017-0115.txt
+    │   │   ├── uksc-2017-0160.txt
+    │   │   ├── uksc-2017-0214.txt
+    │   │   ├── uksc-2018-0030.txt
+    │   │   ├── uksc-2018-0099.txt
+    │   │   ├── uksc-2018-0131.txt
+    │   │   ├── uksc-2018-0132.txt
+    │   │   ├── uksc-2018-0140.txt
+    │   │   ├── uksc-2018-0154.txt
+    │   │   ├── uksc-2018-0164.txt
+    │   │   ├── uksc-2018-0225.txt
+    │   │   ├── uksc-2019-0001.txt
+    │   │   ├── uksc-2019-0028.txt
+    │   │   └── uksc-2020-0042.txt
+    │   ├── stats-UK-test.txt
+    │   └── summary
+    │       ├── full
+    │       └── segment-wise
+    └── train-data
+        ├── judgement
+        │   ├── uksc-2009-0018.txt
+        │   ├── uksc-2009-0019.txt
+        │   ├── uksc-2009-0020.txt
+        │   ├── uksc-2009-0031.txt
+        │   ├── uksc-2009-0032.txt
+        │   ├── uksc-2009-0034.txt
+        │   ├── uksc-2009-0036.txt
+        │   ├── uksc-2009-0037.txt
+        │   ├── uksc-2009-0038.txt
+        │   ├── uksc-2009-0042.txt
+        │   ├── uksc-2009-0044.txt
+        │   ├── uksc-2009-0047.txt
+        │   ├── uksc-2009-0048.txt
+        │   ├── uksc-2009-0050.txt
+        │   ├── uksc-2009-0052.txt
+        │   ├── uksc-2009-0054.txt
+        │   ├── uksc-2009-0057.txt
+        │   ├── uksc-2009-0065.txt
+        │   ├── uksc-2009-0070.txt
+        │   ├── uksc-2009-0071.txt
+        │   ├── uksc-2009-0074.txt
+        │   ├── uksc-2009-0075.txt
+        │   ├── uksc-2009-0077.txt
+        │   ├── uksc-2009-0087.txt
+        │   ├── uksc-2009-0090.txt
+        │   ├── uksc-2009-0098.txt
+        │   ├── uksc-2009-0103.txt
+        │   ├── uksc-2009-0104.txt
+        │   ├── uksc-2009-0106.txt
+        │   ├── uksc-2009-0107.txt
+        │   ├── uksc-2009-0108.txt
+        │   ├── uksc-2009-0119.txt
+        │   ├── uksc-2009-0121.txt
+        │   ├── uksc-2009-0122.txt
+        │   ├── uksc-2009-0123.txt
+        │   ├── uksc-2009-0126.txt
+        │   ├── uksc-2009-0128.txt
+        │   ├── uksc-2009-0131.txt
+        │   ├── uksc-2009-0136.txt
+        │   ├── uksc-2009-0143.txt
+        │   ├── uksc-2009-0144.txt
+        │   ├── uksc-2009-0146.txt
+        │   ├── uksc-2009-0151.txt
+        │   ├── uksc-2009-0154.txt
+        │   ├── uksc-2009-0157.txt
+        │   ├── uksc-2009-0165.txt
+        │   ├── uksc-2009-0166.txt
+        │   ├── uksc-2009-0168.txt
+        │   ├── uksc-2009-0172.txt
+        │   ├── uksc-2009-0173.txt
+        │   ├── uksc-2009-0175.txt
+        │   ├── uksc-2009-0177.txt
+        │   ├── uksc-2009-0184.txt
+        │   ├── uksc-2009-0192.txt
+        │   ├── uksc-2009-0198.txt
+        │   ├── uksc-2009-0202.txt
+        │   ├── uksc-2009-0205.txt
+        │   ├── uksc-2009-0210.txt
+        │   ├── uksc-2009-0213.txt
+        │   ├── uksc-2009-0217.txt
+        │   ├── uksc-2009-0219.txt
+        │   ├── uksc-2009-0222.txt
+        │   ├── uksc-2009-0223.txt
+        │   ├── uksc-2009-0225.txt
+        │   ├── uksc-2009-0228.txt
+        │   ├── uksc-2009-0232.txt
+        │   ├── uksc-2010-0002.txt
+        │   ├── uksc-2010-0003.txt
+        │   ├── uksc-2010-0006.txt
+        │   ├── uksc-2010-0008.txt
+        │   ├── uksc-2010-0009.txt
+        │   ├── uksc-2010-0012.txt
+        │   ├── uksc-2010-0013.txt
+        │   ├── uksc-2010-0015.txt
+        │   ├── uksc-2010-0018.txt
+        │   ├── uksc-2010-0022.txt
+        │   ├── uksc-2010-0025.txt
+        │   ├── uksc-2010-0028.txt
+        │   ├── uksc-2010-0030.txt
+        │   ├── uksc-2010-0031.txt
+        │   ├── uksc-2010-0033.txt
+        │   ├── uksc-2010-0034.txt
+        │   ├── uksc-2010-0035.txt
+        │   ├── uksc-2010-0036.txt
+        │   ├── uksc-2010-0040.txt
+        │   ├── uksc-2010-0041.txt
+        │   ├── uksc-2010-0045.txt
+        │   ├── uksc-2010-0046.txt
+        │   ├── uksc-2010-0047.txt
+        │   ├── uksc-2010-0056.txt
+        │   ├── uksc-2010-0057.txt
+        │   ├── uksc-2010-0060.txt
+        │   ├── uksc-2010-0062.txt
+        │   ├── uksc-2010-0063.txt
+        │   ├── uksc-2010-0071.txt
+        │   ├── uksc-2010-0074.txt
+        │   ├── uksc-2010-0078.txt
+        │   ├── uksc-2010-0085.txt
+        │   ├── uksc-2010-0086.txt
+        │   ├── uksc-2010-0088.txt
+        │   ├── uksc-2010-0097.txt
+        │   ├── uksc-2010-0098.txt
+        │   ├── uksc-2010-0101.txt
+        │   ├── uksc-2010-0102.txt
+        │   ├── uksc-2010-0107.txt
+        │   ├── uksc-2010-0108.txt
+        │   ├── uksc-2010-0111.txt
+        │   ├── uksc-2010-0114.txt
+        │   ├── uksc-2010-0120.txt
+        │   ├── uksc-2010-0122.txt
+        │   ├── uksc-2010-0130.txt
+        │   ├── uksc-2010-0131.txt
+        │   ├── uksc-2010-0140.txt
+        │   ├── uksc-2010-0142.txt
+        │   ├── uksc-2010-0145.txt
+        │   ├── uksc-2010-0147.txt
+        │   ├── uksc-2010-0149.txt
+        │   ├── uksc-2010-0152.txt
+        │   ├── uksc-2010-0156.txt
+        │   ├── uksc-2010-0157.txt
+        │   ├── uksc-2010-0158.txt
+        │   ├── uksc-2010-0165.txt
+        │   ├── uksc-2010-0166.txt
+        │   ├── uksc-2010-0167.txt
+        │   ├── uksc-2010-0170.txt
+        │   ├── uksc-2010-0173.txt
+        │   ├── uksc-2010-0176.txt
+        │   ├── uksc-2010-0177.txt
+        │   ├── uksc-2010-0178.txt
+        │   ├── uksc-2010-0182.txt
+        │   ├── uksc-2010-0184.txt
+        │   ├── uksc-2010-0186.txt
+        │   ├── uksc-2010-0190.txt
+        │   ├── uksc-2010-0194.txt
+        │   ├── uksc-2010-0195.txt
+        │   ├── uksc-2010-0202.txt
+        │   ├── uksc-2010-0203.txt
+        │   ├── uksc-2010-0206.txt
+        │   ├── uksc-2010-0212.txt
+        │   ├── uksc-2010-0215.txt
+        │   ├── uksc-2010-0226.txt
+        │   ├── uksc-2010-0227.txt
+        │   ├── uksc-2010-0229.txt
+        │   ├── uksc-2010-0230.txt
+        │   ├── uksc-2010-0237.txt
+        │   ├── uksc-2010-0238.txt
+        │   ├── uksc-2010-0239.txt
+        │   ├── uksc-2010-0240.txt
+        │   ├── uksc-2010-0247.txt
+        │   ├── uksc-2011-0003.txt
+        │   ├── uksc-2011-0005.txt
+        │   ├── uksc-2011-0007.txt
+        │   ├── uksc-2011-0010.txt
+        │   ├── uksc-2011-0012.txt
+        │   ├── uksc-2011-0014.txt
+        │   ├── uksc-2011-0022.txt
+        │   ├── uksc-2011-0025.txt
+        │   ├── uksc-2011-0026.txt
+        │   ├── uksc-2011-0027.txt
+        │   ├── uksc-2011-0028.txt
+        │   ├── uksc-2011-0029.txt
+        │   ├── uksc-2011-0031.txt
+        │   ├── uksc-2011-0032.txt
+        │   ├── uksc-2011-0033.txt
+        │   ├── uksc-2011-0039.txt
+        │   ├── uksc-2011-0040.txt
+        │   ├── uksc-2011-0041.txt
+        │   ├── uksc-2011-0050.txt
+        │   ├── uksc-2011-0057.txt
+        │   ├── uksc-2011-0079.txt
+        │   ├── uksc-2011-0084.txt
+        │   ├── uksc-2011-0086.txt
+        │   ├── uksc-2011-0087.txt
+        │   ├── uksc-2011-0091.txt
+        │   ├── uksc-2011-0099.txt
+        │   ├── uksc-2011-0100.txt
+        │   ├── uksc-2011-0101.txt
+        │   ├── uksc-2011-0108.txt
+        │   ├── uksc-2011-0110.txt
+        │   ├── uksc-2011-0112.txt
+        │   ├── uksc-2011-0118.txt
+        │   ├── uksc-2011-0123.txt
+        │   ├── uksc-2011-0124.txt
+        │   ├── uksc-2011-0128.txt
+        │   ├── uksc-2011-0129.txt
+        │   ├── uksc-2011-0143.txt
+        │   ├── uksc-2011-0144.txt
+        │   ├── uksc-2011-0145.txt
+        │   ├── uksc-2011-0146.txt
+        │   ├── uksc-2011-0147.txt
+        │   ├── uksc-2011-0149.txt
+        │   ├── uksc-2011-0150.txt
+        │   ├── uksc-2011-0151.txt
+        │   ├── uksc-2011-0156.txt
+        │   ├── uksc-2011-0159.txt
+        │   ├── uksc-2011-0172.txt
+        │   ├── uksc-2011-0173.txt
+        │   ├── uksc-2011-0176.txt
+        │   ├── uksc-2011-0177.txt
+        │   ├── uksc-2011-0178.txt
+        │   ├── uksc-2011-0180.txt
+        │   ├── uksc-2011-0182.txt
+        │   ├── uksc-2011-0183.txt
+        │   ├── uksc-2011-0184.txt
+        │   ├── uksc-2011-0186.txt
+        │   ├── uksc-2011-0199.txt
+        │   ├── uksc-2011-0201.txt
+        │   ├── uksc-2011-0202.txt
+        │   ├── uksc-2011-0209.txt
+        │   ├── uksc-2011-0210.txt
+        │   ├── uksc-2011-0212.txt
+        │   ├── uksc-2011-0217.txt
+        │   ├── uksc-2011-0221.txt
+        │   ├── uksc-2011-0229.txt
+        │   ├── uksc-2011-0234.txt
+        │   ├── uksc-2011-0240.txt
+        │   ├── uksc-2011-0241.txt
+        │   ├── uksc-2011-0246.txt
+        │   ├── uksc-2011-0247.txt
+        │   ├── uksc-2011-0251.txt
+        │   ├── uksc-2011-0252.txt
+        │   ├── uksc-2011-0258.txt
+        │   ├── uksc-2011-0259.txt
+        │   ├── uksc-2011-0261.txt
+        │   ├── uksc-2011-0262.txt
+        │   ├── uksc-2011-0264.txt
+        │   ├── uksc-2011-0265.txt
+        │   ├── uksc-2011-0266.txt
+        │   ├── uksc-2012-0003.txt
+        │   ├── uksc-2012-0006.txt
+        │   ├── uksc-2012-0008.txt
+        │   ├── uksc-2012-0010.txt
+        │   ├── uksc-2012-0014.txt
+        │   ├── uksc-2012-0015.txt
+        │   ├── uksc-2012-0017.txt
+        │   ├── uksc-2012-0020.txt
+        │   ├── uksc-2012-0023.txt
+        │   ├── uksc-2012-0030.txt
+        │   ├── uksc-2012-0033.txt
+        │   ├── uksc-2012-0034.txt
+        │   ├── uksc-2012-0038.txt
+        │   ├── uksc-2012-0039.txt
+        │   ├── uksc-2012-0041.txt
+        │   ├── uksc-2012-0042.txt
+        │   ├── uksc-2012-0048.txt
+        │   ├── uksc-2012-0057.txt
+        │   ├── uksc-2012-0060.txt
+        │   ├── uksc-2012-0062.txt
+        │   ├── uksc-2012-0065.txt
+        │   ├── uksc-2012-0066.txt
+        │   ├── uksc-2012-0068.txt
+        │   ├── uksc-2012-0069.txt
+        │   ├── uksc-2012-0076.txt
+        │   ├── uksc-2012-0082.txt
+        │   ├── uksc-2012-0087.txt
+        │   ├── uksc-2012-0088.txt
+        │   ├── uksc-2012-0089.txt
+        │   ├── uksc-2012-0090.txt
+        │   ├── uksc-2012-0093.txt
+        │   ├── uksc-2012-0098.txt
+        │   ├── uksc-2012-0102.txt
+        │   ├── uksc-2012-0105.txt
+        │   ├── uksc-2012-0111.txt
+        │   ├── uksc-2012-0112.txt
+        │   ├── uksc-2012-0113.txt
+        │   ├── uksc-2012-0115.txt
+        │   ├── uksc-2012-0122.txt
+        │   ├── uksc-2012-0126.txt
+        │   ├── uksc-2012-0128.txt
+        │   ├── uksc-2012-0129.txt
+        │   ├── uksc-2012-0135.txt
+        │   ├── uksc-2012-0136.txt
+        │   ├── uksc-2012-0142.txt
+        │   ├── uksc-2012-0149.txt
+        │   ├── uksc-2012-0151.txt
+        │   ├── uksc-2012-0152.txt
+        │   ├── uksc-2012-0157.txt
+        │   ├── uksc-2012-0158.txt
+        │   ├── uksc-2012-0160.txt
+        │   ├── uksc-2012-0163.txt
+        │   ├── uksc-2012-0167.txt
+        │   ├── uksc-2012-0175.txt
+        │   ├── uksc-2012-0177.txt
+        │   ├── uksc-2012-0182.txt
+        │   ├── uksc-2012-0185.txt
+        │   ├── uksc-2012-0188.txt
+        │   ├── uksc-2012-0192.txt
+        │   ├── uksc-2012-0193.txt
+        │   ├── uksc-2012-0196.txt
+        │   ├── uksc-2012-0198.txt
+        │   ├── uksc-2012-0204.txt
+        │   ├── uksc-2012-0207.txt
+        │   ├── uksc-2012-0208.txt
+        │   ├── uksc-2012-0209.txt
+        │   ├── uksc-2012-0217.txt
+        │   ├── uksc-2012-0225.txt
+        │   ├── uksc-2012-0226.txt
+        │   ├── uksc-2012-0229.txt
+        │   ├── uksc-2012-0234.txt
+        │   ├── uksc-2012-0245.txt
+        │   ├── uksc-2012-0248.txt
+        │   ├── uksc-2012-0257.txt
+        │   ├── uksc-2012-0259.txt
+        │   ├── uksc-2012-0263.txt
+        │   ├── uksc-2012-0272.txt
+        │   ├── uksc-2012-0276.txt
+        │   ├── uksc-2012-0279.txt
+        │   ├── uksc-2013-0004.txt
+        │   ├── uksc-2013-0022.txt
+        │   ├── uksc-2013-0024.txt
+        │   ├── uksc-2013-0025.txt
+        │   ├── uksc-2013-0033.txt
+        │   ├── uksc-2013-0035.txt
+        │   ├── uksc-2013-0038.txt
+        │   ├── uksc-2013-0040.txt
+        │   ├── uksc-2013-0043.txt
+        │   ├── uksc-2013-0046.txt
+        │   ├── uksc-2013-0048.txt
+        │   ├── uksc-2013-0049.txt
+        │   ├── uksc-2013-0052.txt
+        │   ├── uksc-2013-0054.txt
+        │   ├── uksc-2013-0064.txt
+        │   ├── uksc-2013-0068.txt
+        │   ├── uksc-2013-0072.txt
+        │   ├── uksc-2013-0090.txt
+        │   ├── uksc-2013-0094.txt
+        │   ├── uksc-2013-0098.txt
+        │   ├── uksc-2013-0099.txt
+        │   ├── uksc-2013-0100.txt
+        │   ├── uksc-2013-0102.txt
+        │   ├── uksc-2013-0104.txt
+        │   ├── uksc-2013-0106.txt
+        │   ├── uksc-2013-0108.txt
+        │   ├── uksc-2013-0112.txt
+        │   ├── uksc-2013-0116.txt
+        │   ├── uksc-2013-0117.txt
+        │   ├── uksc-2013-0124.txt
+        │   ├── uksc-2013-0127.txt
+        │   ├── uksc-2013-0133.txt
+        │   ├── uksc-2013-0134.txt
+        │   ├── uksc-2013-0136.txt
+        │   ├── uksc-2013-0146.txt
+        │   ├── uksc-2013-0150.txt
+        │   ├── uksc-2013-0152.txt
+        │   ├── uksc-2013-0153.txt
+        │   ├── uksc-2013-0155.txt
+        │   ├── uksc-2013-0159.txt
+        │   ├── uksc-2013-0160.txt
+        │   ├── uksc-2013-0162.txt
+        │   ├── uksc-2013-0170.txt
+        │   ├── uksc-2013-0171.txt
+        │   ├── uksc-2013-0172.txt
+        │   ├── uksc-2013-0181.txt
+        │   ├── uksc-2013-0186.txt
+        │   ├── uksc-2013-0188.txt
+        │   ├── uksc-2013-0193.txt
+        │   ├── uksc-2013-0194.txt
+        │   ├── uksc-2013-0197.txt
+        │   ├── uksc-2013-0202.txt
+        │   ├── uksc-2013-0203.txt
+        │   ├── uksc-2013-0206.txt
+        │   ├── uksc-2013-0212.txt
+        │   ├── uksc-2013-0221.txt
+        │   ├── uksc-2013-0227.txt
+        │   ├── uksc-2013-0230.txt
+        │   ├── uksc-2013-0234.txt
+        │   ├── uksc-2013-0235.txt
+        │   ├── uksc-2013-0247.txt
+        │   ├── uksc-2013-0248.txt
+        │   ├── uksc-2013-0249.txt
+        │   ├── uksc-2013-0252.txt
+        │   ├── uksc-2013-0257.txt
+        │   ├── uksc-2013-0258.txt
+        │   ├── uksc-2013-0263.txt
+        │   ├── uksc-2013-0264.txt
+        │   ├── uksc-2013-0267.txt
+        │   ├── uksc-2013-0274.txt
+        │   ├── uksc-2013-0280.txt
+        │   ├── uksc-2014-0019.txt
+        │   ├── uksc-2014-0021.txt
+        │   ├── uksc-2014-0026.txt
+        │   ├── uksc-2014-0028.txt
+        │   ├── uksc-2014-0035.txt
+        │   ├── uksc-2014-0036.txt
+        │   ├── uksc-2014-0037.txt
+        │   ├── uksc-2014-0043.txt
+        │   ├── uksc-2014-0044.txt
+        │   ├── uksc-2014-0047.txt
+        │   ├── uksc-2014-0052.txt
+        │   ├── uksc-2014-0059.txt
+        │   ├── uksc-2014-0067.txt
+        │   ├── uksc-2014-0070.txt
+        │   ├── uksc-2014-0071.txt
+        │   ├── uksc-2014-0074.txt
+        │   ├── uksc-2014-0092.txt
+        │   ├── uksc-2014-0093.txt
+        │   ├── uksc-2014-0101.txt
+        │   ├── uksc-2014-0103.txt
+        │   ├── uksc-2014-0105.txt
+        │   ├── uksc-2014-0106.txt
+        │   ├── uksc-2014-0114.txt
+        │   ├── uksc-2014-0125.txt
+        │   ├── uksc-2014-0137.txt
+        │   ├── uksc-2014-0139.txt
+        │   ├── uksc-2014-0143.txt
+        │   ├── uksc-2014-0147.txt
+        │   ├── uksc-2014-0148.txt
+        │   ├── uksc-2014-0150.txt
+        │   ├── uksc-2014-0151.txt
+        │   ├── uksc-2014-0153.txt
+        │   ├── uksc-2014-0157.txt
+        │   ├── uksc-2014-0158.txt
+        │   ├── uksc-2014-0165.txt
+        │   ├── uksc-2014-0166.txt
+        │   ├── uksc-2014-0173.txt
+        │   ├── uksc-2014-0175.txt
+        │   ├── uksc-2014-0180.txt
+        │   ├── uksc-2014-0183.txt
+        │   ├── uksc-2014-0185.txt
+        │   ├── uksc-2014-0191.txt
+        │   ├── uksc-2014-0200.txt
+        │   ├── uksc-2014-0202.txt
+        │   ├── uksc-2014-0203.txt
+        │   ├── uksc-2014-0204.txt
+        │   ├── uksc-2014-0207.txt
+        │   ├── uksc-2014-0208.txt
+        │   ├── uksc-2014-0210.txt
+        │   ├── uksc-2014-0214.txt
+        │   ├── uksc-2014-0215.txt
+        │   ├── uksc-2014-0216.txt
+        │   ├── uksc-2014-0217.txt
+        │   ├── uksc-2014-0218.txt
+        │   ├── uksc-2014-0219.txt
+        │   ├── uksc-2014-0220.txt
+        │   ├── uksc-2014-0227.txt
+        │   ├── uksc-2014-0234.txt
+        │   ├── uksc-2014-0235.txt
+        │   ├── uksc-2014-0247.txt
+        │   ├── uksc-2014-0248.txt
+        │   ├── uksc-2014-0251.txt
+        │   ├── uksc-2014-0252.txt
+        │   ├── uksc-2014-0255.txt
+        │   ├── uksc-2014-0264.txt
+        │   ├── uksc-2014-0270.txt
+        │   ├── uksc-2014-0272.txt
+        │   ├── uksc-2014-0273.txt
+        │   ├── uksc-2014-0275.txt
+        │   ├── uksc-2015-0002.txt
+        │   ├── uksc-2015-0009.txt
+        │   ├── uksc-2015-0011.txt
+        │   ├── uksc-2015-0015.txt
+        │   ├── uksc-2015-0017.txt
+        │   ├── uksc-2015-0021.txt
+        │   ├── uksc-2015-0022.txt
+        │   ├── uksc-2015-0025.txt
+        │   ├── uksc-2015-0027.txt
+        │   ├── uksc-2015-0036.txt
+        │   ├── uksc-2015-0044.txt
+        │   ├── uksc-2015-0045.txt
+        │   ├── uksc-2015-0048.txt
+        │   ├── uksc-2015-0050.txt
+        │   ├── uksc-2015-0053.txt
+        │   ├── uksc-2015-0061.txt
+        │   ├── uksc-2015-0069.txt
+        │   ├── uksc-2015-0073.txt
+        │   ├── uksc-2015-0075.txt
+        │   ├── uksc-2015-0080.txt
+        │   ├── uksc-2015-0091.txt
+        │   ├── uksc-2015-0092.txt
+        │   ├── uksc-2015-0095.txt
+        │   ├── uksc-2015-0099.txt
+        │   ├── uksc-2015-0110.txt
+        │   ├── uksc-2015-0113.txt
+        │   ├── uksc-2015-0115.txt
+        │   ├── uksc-2015-0122.txt
+        │   ├── uksc-2015-0125.txt
+        │   ├── uksc-2015-0126.txt
+        │   ├── uksc-2015-0127.txt
+        │   ├── uksc-2015-0129.txt
+        │   ├── uksc-2015-0134.txt
+        │   ├── uksc-2015-0135.txt
+        │   ├── uksc-2015-0137.txt
+        │   ├── uksc-2015-0142.txt
+        │   ├── uksc-2015-0143.txt
+        │   ├── uksc-2015-0147.txt
+        │   ├── uksc-2015-0148.txt
+        │   ├── uksc-2015-0152.txt
+        │   ├── uksc-2015-0153.txt
+        │   ├── uksc-2015-0154.txt
+        │   ├── uksc-2015-0160.txt
+        │   ├── uksc-2015-0161.txt
+        │   ├── uksc-2015-0166.txt
+        │   ├── uksc-2015-0170.txt
+        │   ├── uksc-2015-0175.txt
+        │   ├── uksc-2015-0176.txt
+        │   ├── uksc-2015-0181.txt
+        │   ├── uksc-2015-0199.txt
+        │   ├── uksc-2015-0203.txt
+        │   ├── uksc-2015-0209.txt
+        │   ├── uksc-2015-0212.txt
+        │   ├── uksc-2015-0215.txt
+        │   ├── uksc-2015-0219.txt
+        │   ├── uksc-2015-0220.txt
+        │   ├── uksc-2015-0224.txt
+        │   ├── uksc-2015-0230.txt
+        │   ├── uksc-2015-0233.txt
+        │   ├── uksc-2015-0236.txt
+        │   ├── uksc-2015-0243.txt
+        │   ├── uksc-2015-0246.txt
+        │   ├── uksc-2015-0247.txt
+        │   ├── uksc-2015-0248.txt
+        │   ├── uksc-2016-0003.txt
+        │   ├── uksc-2016-0006.txt
+        │   ├── uksc-2016-0007.txt
+        │   ├── uksc-2016-0009.txt
+        │   ├── uksc-2016-0010.txt
+        │   ├── uksc-2016-0013.txt
+        │   ├── uksc-2016-0015.txt
+        │   ├── uksc-2016-0023.txt
+        │   ├── uksc-2016-0026.txt
+        │   ├── uksc-2016-0039.txt
+        │   ├── uksc-2016-0041.txt
+        │   ├── uksc-2016-0042.txt
+        │   ├── uksc-2016-0053.txt
+        │   ├── uksc-2016-0054.txt
+        │   ├── uksc-2016-0062.txt
+        │   ├── uksc-2016-0069.txt
+        │   ├── uksc-2016-0070.txt
+        │   ├── uksc-2016-0073.txt
+        │   ├── uksc-2016-0076.txt
+        │   ├── uksc-2016-0079.txt
+        │   ├── uksc-2016-0083.txt
+        │   ├── uksc-2016-0084.txt
+        │   ├── uksc-2016-0086.txt
+        │   ├── uksc-2016-0090.txt
+        │   ├── uksc-2016-0100.txt
+        │   ├── uksc-2016-0102.txt
+        │   ├── uksc-2016-0107.txt
+        │   ├── uksc-2016-0111.txt
+        │   ├── uksc-2016-0121.txt
+        │   ├── uksc-2016-0130.txt
+        │   ├── uksc-2016-0132.txt
+        │   ├── uksc-2016-0136.txt
+        │   ├── uksc-2016-0137.txt
+        │   ├── uksc-2016-0140.txt
+        │   ├── uksc-2016-0142.txt
+        │   ├── uksc-2016-0144.txt
+        │   ├── uksc-2016-0148.txt
+        │   ├── uksc-2016-0150.txt
+        │   ├── uksc-2016-0152.txt
+        │   ├── uksc-2016-0155.txt
+        │   ├── uksc-2016-0156.txt
+        │   ├── uksc-2016-0157.txt
+        │   ├── uksc-2016-0159.txt
+        │   ├── uksc-2016-0164.txt
+        │   ├── uksc-2016-0165.txt
+        │   ├── uksc-2016-0166.txt
+        │   ├── uksc-2016-0170.txt
+        │   ├── uksc-2016-0174.txt
+        │   ├── uksc-2016-0185.txt
+        │   ├── uksc-2016-0188.txt
+        │   ├── uksc-2016-0192.txt
+        │   ├── uksc-2016-0195.txt
+        │   ├── uksc-2016-0196.txt
+        │   ├── uksc-2016-0197.txt
+        │   ├── uksc-2016-0204.txt
+        │   ├── uksc-2016-0209.txt
+        │   ├── uksc-2016-0212.txt
+        │   ├── uksc-2016-0214.txt
+        │   ├── uksc-2016-0218.txt
+        │   ├── uksc-2016-0219.txt
+        │   ├── uksc-2016-0220.txt
+        │   ├── uksc-2016-0223.txt
+        │   ├── uksc-2016-0226.txt
+        │   ├── uksc-2016-0227.txt
+        │   ├── uksc-2016-0228.txt
+        │   ├── uksc-2017-0003.txt
+        │   ├── uksc-2017-0016.txt
+        │   ├── uksc-2017-0020.txt
+        │   ├── uksc-2017-0023.txt
+        │   ├── uksc-2017-0025.txt
+        │   ├── uksc-2017-0032.txt
+        │   ├── uksc-2017-0035.txt
+        │   ├── uksc-2017-0037.txt
+        │   ├── uksc-2017-0043.txt
+        │   ├── uksc-2017-0053.txt
+        │   ├── uksc-2017-0058.txt
+        │   ├── uksc-2017-0060.txt
+        │   ├── uksc-2017-0070.txt
+        │   ├── uksc-2017-0072.txt
+        │   ├── uksc-2017-0074.txt
+        │   ├── uksc-2017-0077.txt
+        │   ├── uksc-2017-0080.txt
+        │   ├── uksc-2017-0092.txt
+        │   ├── uksc-2017-0097.txt
+        │   ├── uksc-2017-0103.txt
+        │   ├── uksc-2017-0111.txt
+        │   ├── uksc-2017-0124.txt
+        │   ├── uksc-2017-0126.txt
+        │   ├── uksc-2017-0127.txt
+        │   ├── uksc-2017-0131.txt
+        │   ├── uksc-2017-0132.txt
+        │   ├── uksc-2017-0135.txt
+        │   ├── uksc-2017-0141.txt
+        │   ├── uksc-2017-0151.txt
+        │   ├── uksc-2017-0156.txt
+        │   ├── uksc-2017-0158.txt
+        │   ├── uksc-2017-0159.txt
+        │   ├── uksc-2017-0172.txt
+        │   ├── uksc-2017-0175.txt
+        │   ├── uksc-2017-0182.txt
+        │   ├── uksc-2017-0185.txt
+        │   ├── uksc-2017-0190.txt
+        │   ├── uksc-2017-0195.txt
+        │   ├── uksc-2017-0200.txt
+        │   ├── uksc-2017-0202.txt
+        │   ├── uksc-2017-0207.txt
+        │   ├── uksc-2017-0211.txt
+        │   ├── uksc-2017-0212.txt
+        │   ├── uksc-2017-0215.txt
+        │   ├── uksc-2018-0004.txt
+        │   ├── uksc-2018-0006.txt
+        │   ├── uksc-2018-0007.txt
+        │   ├── uksc-2018-0008.txt
+        │   ├── uksc-2018-0011.txt
+        │   ├── uksc-2018-0012.txt
+        │   ├── uksc-2018-0013.txt
+        │   ├── uksc-2018-0014.txt
+        │   ├── uksc-2018-0031.txt
+        │   ├── uksc-2018-0037.txt
+        │   ├── uksc-2018-0039.txt
+        │   ├── uksc-2018-0040.txt
+        │   ├── uksc-2018-0045.txt
+        │   ├── uksc-2018-0048.txt
+        │   ├── uksc-2018-0054.txt
+        │   ├── uksc-2018-0061.txt
+        │   ├── uksc-2018-0062.txt
+        │   ├── uksc-2018-0064.txt
+        │   ├── uksc-2018-0073.txt
+        │   ├── uksc-2018-0075.txt
+        │   ├── uksc-2018-0077.txt
+        │   ├── uksc-2018-0080.txt
+        │   ├── uksc-2018-0091.txt
+        │   ├── uksc-2018-0092.txt
+        │   ├── uksc-2018-0094.txt
+        │   ├── uksc-2018-0098.txt
+        │   ├── uksc-2018-0100.txt
+        │   ├── uksc-2018-0102.txt
+        │   ├── uksc-2018-0104.txt
+        │   ├── uksc-2018-0114.txt
+        │   ├── uksc-2018-0116.txt
+        │   ├── uksc-2018-0117.txt
+        │   ├── uksc-2018-0133.txt
+        │   ├── uksc-2018-0137.txt
+        │   ├── uksc-2018-0150.txt
+        │   ├── uksc-2018-0152.txt
+        │   ├── uksc-2018-0159.txt
+        │   ├── uksc-2018-0166.txt
+        │   ├── uksc-2018-0173.txt
+        │   ├── uksc-2018-0177.txt
+        │   ├── uksc-2018-0178.txt
+        │   ├── uksc-2018-0184.txt
+        │   ├── uksc-2018-0187.txt
+        │   ├── uksc-2018-0194.txt
+        │   ├── uksc-2018-0197.txt
+        │   ├── uksc-2018-0200.txt
+        │   ├── uksc-2018-0203.txt
+        │   ├── uksc-2018-0208.txt
+        │   ├── uksc-2018-0211.txt
+        │   ├── uksc-2018-0213.txt
+        │   ├── uksc-2018-0214.txt
+        │   ├── uksc-2018-0218.txt
+        │   ├── uksc-2018-0224.txt
+        │   ├── uksc-2018-0226.txt
+        │   ├── uksc-2018-0229.txt
+        │   ├── uksc-2018-0231.txt
+        │   ├── uksc-2019-0006.txt
+        │   ├── uksc-2019-0010.txt
+        │   ├── uksc-2019-0013.txt
+        │   ├── uksc-2019-0032.txt
+        │   ├── uksc-2019-0036.txt
+        │   ├── uksc-2019-0057.txt
+        │   ├── uksc-2019-0063.txt
+        │   ├── uksc-2019-0089.txt
+        │   ├── uksc-2019-0094.txt
+        │   ├── uksc-2019-0118.txt
+        │   ├── uksc-2019-0137.txt
+        │   ├── uksc-2019-0145.txt
+        │   ├── uksc-2019-0150.txt
+        │   ├── uksc-2019-0156.txt
+        │   ├── uksc-2019-0162.txt
+        │   ├── uksc-2020-0022.txt
+        │   └── uksc-2020-0091.txt
+        ├── stats-UK-train.txt
+        └── summary
+            ├── uksc-2009-0018.txt
+            ├── uksc-2009-0019.txt
+            ├── uksc-2009-0020.txt
+            ├── uksc-2009-0031.txt
+            ├── uksc-2009-0032.txt
+            ├── uksc-2009-0034.txt
+            ├── uksc-2009-0036.txt
+            ├── uksc-2009-0037.txt
+            ├── uksc-2009-0038.txt
+            ├── uksc-2009-0042.txt
+            ├── uksc-2009-0044.txt
+            ├── uksc-2009-0047.txt
+            ├── uksc-2009-0048.txt
+            ├── uksc-2009-0050.txt
+            ├── uksc-2009-0052.txt
+            ├── uksc-2009-0054.txt
+            ├── uksc-2009-0057.txt
+            ├── uksc-2009-0065.txt
+            ├── uksc-2009-0070.txt
+            ├── uksc-2009-0071.txt
+            ├── uksc-2009-0074.txt
+            ├── uksc-2009-0075.txt
+            ├── uksc-2009-0077.txt
+            ├── uksc-2009-0087.txt
+            ├── uksc-2009-0090.txt
+            ├── uksc-2009-0098.txt
+            ├── uksc-2009-0103.txt
+            ├── uksc-2009-0104.txt
+            ├── uksc-2009-0106.txt
+            ├── uksc-2009-0107.txt
+            ├── uksc-2009-0108.txt
+            ├── uksc-2009-0119.txt
+            ├── uksc-2009-0121.txt
+            ├── uksc-2009-0122.txt
+            ├── uksc-2009-0123.txt
+            ├── uksc-2009-0126.txt
+            ├── uksc-2009-0128.txt
+            ├── uksc-2009-0131.txt
+            ├── uksc-2009-0136.txt
+            ├── uksc-2009-0143.txt
+            ├── uksc-2009-0144.txt
+            ├── uksc-2009-0146.txt
+            ├── uksc-2009-0151.txt
+            ├── uksc-2009-0154.txt
+            ├── uksc-2009-0157.txt
+            ├── uksc-2009-0165.txt
+            ├── uksc-2009-0166.txt
+            ├── uksc-2009-0168.txt
+            ├── uksc-2009-0172.txt
+            ├── uksc-2009-0173.txt
+            ├── uksc-2009-0175.txt
+            ├── uksc-2009-0177.txt
+            ├── uksc-2009-0184.txt
+            ├── uksc-2009-0192.txt
+            ├── uksc-2009-0198.txt
+            ├── uksc-2009-0202.txt
+            ├── uksc-2009-0205.txt
+            ├── uksc-2009-0210.txt
+            ├── uksc-2009-0213.txt
+            ├── uksc-2009-0217.txt
+            ├── uksc-2009-0219.txt
+            ├── uksc-2009-0222.txt
+            ├── uksc-2009-0223.txt
+            ├── uksc-2009-0225.txt
+            ├── uksc-2009-0228.txt
+            ├── uksc-2009-0232.txt
+            ├── uksc-2010-0002.txt
+            ├── uksc-2010-0003.txt
+            ├── uksc-2010-0006.txt
+            ├── uksc-2010-0008.txt
+            ├── uksc-2010-0009.txt
+            ├── uksc-2010-0012.txt
+            ├── uksc-2010-0013.txt
+            ├── uksc-2010-0015.txt
+            ├── uksc-2010-0018.txt
+            ├── uksc-2010-0022.txt
+            ├── uksc-2010-0025.txt
+            ├── uksc-2010-0028.txt
+            ├── uksc-2010-0030.txt
+            ├── uksc-2010-0031.txt
+            ├── uksc-2010-0033.txt
+            ├── uksc-2010-0034.txt
+            ├── uksc-2010-0035.txt
+            ├── uksc-2010-0036.txt
+            ├── uksc-2010-0040.txt
+            ├── uksc-2010-0041.txt
+            ├── uksc-2010-0045.txt
+            ├── uksc-2010-0046.txt
+            ├── uksc-2010-0047.txt
+            ├── uksc-2010-0056.txt
+            ├── uksc-2010-0057.txt
+            ├── uksc-2010-0060.txt
+            ├── uksc-2010-0062.txt
+            ├── uksc-2010-0063.txt
+            ├── uksc-2010-0071.txt
+            ├── uksc-2010-0074.txt
+            ├── uksc-2010-0078.txt
+            ├── uksc-2010-0085.txt
+            ├── uksc-2010-0086.txt
+            ├── uksc-2010-0088.txt
+            ├── uksc-2010-0097.txt
+            ├── uksc-2010-0098.txt
+            ├── uksc-2010-0101.txt
+            ├── uksc-2010-0102.txt
+            ├── uksc-2010-0107.txt
+            ├── uksc-2010-0108.txt
+            ├── uksc-2010-0111.txt
+            ├── uksc-2010-0114.txt
+            ├── uksc-2010-0120.txt
+            ├── uksc-2010-0122.txt
+            ├── uksc-2010-0130.txt
+            ├── uksc-2010-0131.txt
+            ├── uksc-2010-0140.txt
+            ├── uksc-2010-0142.txt
+            ├── uksc-2010-0145.txt
+            ├── uksc-2010-0147.txt
+            ├── uksc-2010-0149.txt
+            ├── uksc-2010-0152.txt
+            ├── uksc-2010-0156.txt
+            ├── uksc-2010-0157.txt
+            ├── uksc-2010-0158.txt
+            ├── uksc-2010-0165.txt
+            ├── uksc-2010-0166.txt
+            ├── uksc-2010-0167.txt
+            ├── uksc-2010-0170.txt
+            ├── uksc-2010-0173.txt
+            ├── uksc-2010-0176.txt
+            ├── uksc-2010-0177.txt
+            ├── uksc-2010-0178.txt
+            ├── uksc-2010-0182.txt
+            ├── uksc-2010-0184.txt
+            ├── uksc-2010-0186.txt
+            ├── uksc-2010-0190.txt
+            ├── uksc-2010-0194.txt
+            ├── uksc-2010-0195.txt
+            ├── uksc-2010-0202.txt
+            ├── uksc-2010-0203.txt
+            ├── uksc-2010-0206.txt
+            ├── uksc-2010-0212.txt
+            ├── uksc-2010-0215.txt
+            ├── uksc-2010-0226.txt
+            ├── uksc-2010-0227.txt
+            ├── uksc-2010-0229.txt
+            ├── uksc-2010-0230.txt
+            ├── uksc-2010-0237.txt
+            ├── uksc-2010-0238.txt
+            ├── uksc-2010-0239.txt
+            ├── uksc-2010-0240.txt
+            ├── uksc-2010-0247.txt
+            ├── uksc-2011-0003.txt
+            ├── uksc-2011-0005.txt
+            ├── uksc-2011-0007.txt
+            ├── uksc-2011-0010.txt
+            ├── uksc-2011-0012.txt
+            ├── uksc-2011-0014.txt
+            ├── uksc-2011-0022.txt
+            ├── uksc-2011-0025.txt
+            ├── uksc-2011-0026.txt
+            ├── uksc-2011-0027.txt
+            ├── uksc-2011-0028.txt
+            ├── uksc-2011-0029.txt
+            ├── uksc-2011-0031.txt
+            ├── uksc-2011-0032.txt
+            ├── uksc-2011-0033.txt
+            ├── uksc-2011-0039.txt
+            ├── uksc-2011-0040.txt
+            ├── uksc-2011-0041.txt
+            ├── uksc-2011-0050.txt
+            ├── uksc-2011-0057.txt
+            ├── uksc-2011-0079.txt
+            ├── uksc-2011-0084.txt
+            ├── uksc-2011-0086.txt
+            ├── uksc-2011-0087.txt
+            ├── uksc-2011-0091.txt
+            ├── uksc-2011-0099.txt
+            ├── uksc-2011-0100.txt
+            ├── uksc-2011-0101.txt
+            ├── uksc-2011-0108.txt
+            ├── uksc-2011-0110.txt
+            ├── uksc-2011-0112.txt
+            ├── uksc-2011-0118.txt
+            ├── uksc-2011-0123.txt
+            ├── uksc-2011-0124.txt
+            ├── uksc-2011-0128.txt
+            ├── uksc-2011-0129.txt
+            ├── uksc-2011-0143.txt
+            ├── uksc-2011-0144.txt
+            ├── uksc-2011-0145.txt
+            ├── uksc-2011-0146.txt
+            ├── uksc-2011-0147.txt
+            ├── uksc-2011-0149.txt
+            ├── uksc-2011-0150.txt
+            ├── uksc-2011-0151.txt
+            ├── uksc-2011-0156.txt
+            ├── uksc-2011-0159.txt
+            ├── uksc-2011-0172.txt
+            ├── uksc-2011-0173.txt
+            ├── uksc-2011-0176.txt
+            ├── uksc-2011-0177.txt
+            ├── uksc-2011-0178.txt
+            ├── uksc-2011-0180.txt
+            ├── uksc-2011-0182.txt
+            ├── uksc-2011-0183.txt
+            ├── uksc-2011-0184.txt
+            ├── uksc-2011-0186.txt
+            ├── uksc-2011-0199.txt
+            ├── uksc-2011-0201.txt
+            ├── uksc-2011-0202.txt
+            ├── uksc-2011-0209.txt
+            ├── uksc-2011-0210.txt
+            ├── uksc-2011-0212.txt
+            ├── uksc-2011-0217.txt
+            ├── uksc-2011-0221.txt
+            ├── uksc-2011-0229.txt
+            ├── uksc-2011-0234.txt
+            ├── uksc-2011-0240.txt
+            ├── uksc-2011-0241.txt
+            ├── uksc-2011-0246.txt
+            ├── uksc-2011-0247.txt
+            ├── uksc-2011-0251.txt
+            ├── uksc-2011-0252.txt
+            ├── uksc-2011-0258.txt
+            ├── uksc-2011-0259.txt
+            ├── uksc-2011-0261.txt
+            ├── uksc-2011-0262.txt
+            ├── uksc-2011-0264.txt
+            ├── uksc-2011-0265.txt
+            ├── uksc-2011-0266.txt
+            ├── uksc-2012-0003.txt
+            ├── uksc-2012-0006.txt
+            ├── uksc-2012-0008.txt
+            ├── uksc-2012-0010.txt
+            ├── uksc-2012-0014.txt
+            ├── uksc-2012-0015.txt
+            ├── uksc-2012-0017.txt
+            ├── uksc-2012-0020.txt
+            ├── uksc-2012-0023.txt
+            ├── uksc-2012-0030.txt
+            ├── uksc-2012-0033.txt
+            ├── uksc-2012-0034.txt
+            ├── uksc-2012-0038.txt
+            ├── uksc-2012-0039.txt
+            ├── uksc-2012-0041.txt
+            ├── uksc-2012-0042.txt
+            ├── uksc-2012-0048.txt
+            ├── uksc-2012-0057.txt
+            ├── uksc-2012-0060.txt
+            ├── uksc-2012-0062.txt
+            ├── uksc-2012-0065.txt
+            ├── uksc-2012-0066.txt
+            ├── uksc-2012-0068.txt
+            ├── uksc-2012-0069.txt
+            ├── uksc-2012-0076.txt
+            ├── uksc-2012-0082.txt
+            ├── uksc-2012-0087.txt
+            ├── uksc-2012-0088.txt
+            ├── uksc-2012-0089.txt
+            ├── uksc-2012-0090.txt
+            ├── uksc-2012-0093.txt
+            ├── uksc-2012-0098.txt
+            ├── uksc-2012-0102.txt
+            ├── uksc-2012-0105.txt
+            ├── uksc-2012-0111.txt
+            ├── uksc-2012-0112.txt
+            ├── uksc-2012-0113.txt
+            ├── uksc-2012-0115.txt
+            ├── uksc-2012-0122.txt
+            ├── uksc-2012-0126.txt
+            ├── uksc-2012-0128.txt
+            ├── uksc-2012-0129.txt
+            ├── uksc-2012-0135.txt
+            ├── uksc-2012-0136.txt
+            ├── uksc-2012-0142.txt
+            ├── uksc-2012-0149.txt
+            ├── uksc-2012-0151.txt
+            ├── uksc-2012-0152.txt
+            ├── uksc-2012-0157.txt
+            ├── uksc-2012-0158.txt
+            ├── uksc-2012-0160.txt
+            ├── uksc-2012-0163.txt
+            ├── uksc-2012-0167.txt
+            ├── uksc-2012-0175.txt
+            ├── uksc-2012-0177.txt
+            ├── uksc-2012-0182.txt
+            ├── uksc-2012-0185.txt
+            ├── uksc-2012-0188.txt
+            ├── uksc-2012-0192.txt
+            ├── uksc-2012-0193.txt
+            ├── uksc-2012-0196.txt
+            ├── uksc-2012-0198.txt
+            ├── uksc-2012-0204.txt
+            ├── uksc-2012-0207.txt
+            ├── uksc-2012-0208.txt
+            ├── uksc-2012-0209.txt
+            ├── uksc-2012-0217.txt
+            ├── uksc-2012-0225.txt
+            ├── uksc-2012-0226.txt
+            ├── uksc-2012-0229.txt
+            ├── uksc-2012-0234.txt
+            ├── uksc-2012-0245.txt
+            ├── uksc-2012-0248.txt
+            ├── uksc-2012-0257.txt
+            ├── uksc-2012-0259.txt
+            ├── uksc-2012-0263.txt
+            ├── uksc-2012-0272.txt
+            ├── uksc-2012-0276.txt
+            ├── uksc-2012-0279.txt
+            ├── uksc-2013-0004.txt
+            ├── uksc-2013-0022.txt
+            ├── uksc-2013-0024.txt
+            ├── uksc-2013-0025.txt
+            ├── uksc-2013-0033.txt
+            ├── uksc-2013-0035.txt
+            ├── uksc-2013-0038.txt
+            ├── uksc-2013-0040.txt
+            ├── uksc-2013-0043.txt
+            ├── uksc-2013-0046.txt
+            ├── uksc-2013-0048.txt
+            ├── uksc-2013-0049.txt
+            ├── uksc-2013-0052.txt
+            ├── uksc-2013-0054.txt
+            ├── uksc-2013-0064.txt
+            ├── uksc-2013-0068.txt
+            ├── uksc-2013-0072.txt
+            ├── uksc-2013-0090.txt
+            ├── uksc-2013-0094.txt
+            ├── uksc-2013-0098.txt
+            ├── uksc-2013-0099.txt
+            ├── uksc-2013-0100.txt
+            ├── uksc-2013-0102.txt
+            ├── uksc-2013-0104.txt
+            ├── uksc-2013-0106.txt
+            ├── uksc-2013-0108.txt
+            ├── uksc-2013-0112.txt
+            ├── uksc-2013-0116.txt
+            ├── uksc-2013-0117.txt
+            ├── uksc-2013-0124.txt
+            ├── uksc-2013-0127.txt
+            ├── uksc-2013-0133.txt
+            ├── uksc-2013-0134.txt
+            ├── uksc-2013-0136.txt
+            ├── uksc-2013-0146.txt
+            ├── uksc-2013-0150.txt
+            ├── uksc-2013-0152.txt
+            ├── uksc-2013-0153.txt
+            ├── uksc-2013-0155.txt
+            ├── uksc-2013-0159.txt
+            ├── uksc-2013-0160.txt
+            ├── uksc-2013-0162.txt
+            ├── uksc-2013-0170.txt
+            ├── uksc-2013-0171.txt
+            ├── uksc-2013-0172.txt
+            ├── uksc-2013-0181.txt
+            ├── uksc-2013-0186.txt
+            ├── uksc-2013-0188.txt
+            ├── uksc-2013-0193.txt
+            ├── uksc-2013-0194.txt
+            ├── uksc-2013-0197.txt
+            ├── uksc-2013-0202.txt
+            ├── uksc-2013-0203.txt
+            ├── uksc-2013-0206.txt
+            ├── uksc-2013-0212.txt
+            ├── uksc-2013-0221.txt
+            ├── uksc-2013-0227.txt
+            ├── uksc-2013-0230.txt
+            ├── uksc-2013-0234.txt
+            ├── uksc-2013-0235.txt
+            ├── uksc-2013-0247.txt
+            ├── uksc-2013-0248.txt
+            ├── uksc-2013-0249.txt
+            ├── uksc-2013-0252.txt
+            ├── uksc-2013-0257.txt
+            ├── uksc-2013-0258.txt
+            ├── uksc-2013-0263.txt
+            ├── uksc-2013-0264.txt
+            ├── uksc-2013-0267.txt
+            ├── uksc-2013-0274.txt
+            ├── uksc-2013-0280.txt
+            ├── uksc-2014-0019.txt
+            ├── uksc-2014-0021.txt
+            ├── uksc-2014-0026.txt
+            ├── uksc-2014-0028.txt
+            ├── uksc-2014-0035.txt
+            ├── uksc-2014-0036.txt
+            ├── uksc-2014-0037.txt
+            ├── uksc-2014-0043.txt
+            ├── uksc-2014-0044.txt
+            ├── uksc-2014-0047.txt
+            ├── uksc-2014-0052.txt
+            ├── uksc-2014-0059.txt
+            ├── uksc-2014-0067.txt
+            ├── uksc-2014-0070.txt
+            ├── uksc-2014-0071.txt
+            ├── uksc-2014-0074.txt
+            ├── uksc-2014-0092.txt
+            ├── uksc-2014-0093.txt
+            ├── uksc-2014-0101.txt
+            ├── uksc-2014-0103.txt
+            ├── uksc-2014-0105.txt
+            ├── uksc-2014-0106.txt
+            ├── uksc-2014-0114.txt
+            ├── uksc-2014-0125.txt
+            ├── uksc-2014-0137.txt
+            ├── uksc-2014-0139.txt
+            ├── uksc-2014-0143.txt
+            ├── uksc-2014-0147.txt
+            ├── uksc-2014-0148.txt
+            ├── uksc-2014-0150.txt
+            ├── uksc-2014-0151.txt
+            ├── uksc-2014-0153.txt
+            ├── uksc-2014-0157.txt
+            ├── uksc-2014-0158.txt
+            ├── uksc-2014-0165.txt
+            ├── uksc-2014-0166.txt
+            ├── uksc-2014-0173.txt
+            ├── uksc-2014-0175.txt
+            ├── uksc-2014-0180.txt
+            ├── uksc-2014-0183.txt
+            ├── uksc-2014-0185.txt
+            ├── uksc-2014-0191.txt
+            ├── uksc-2014-0200.txt
+            ├── uksc-2014-0202.txt
+            ├── uksc-2014-0203.txt
+            ├── uksc-2014-0204.txt
+            ├── uksc-2014-0207.txt
+            ├── uksc-2014-0208.txt
+            ├── uksc-2014-0210.txt
+            ├── uksc-2014-0214.txt
+            ├── uksc-2014-0215.txt
+            ├── uksc-2014-0216.txt
+            ├── uksc-2014-0217.txt
+            ├── uksc-2014-0218.txt
+            ├── uksc-2014-0219.txt
+            ├── uksc-2014-0220.txt
+            ├── uksc-2014-0227.txt
+            ├── uksc-2014-0234.txt
+            ├── uksc-2014-0235.txt
+            ├── uksc-2014-0247.txt
+            ├── uksc-2014-0248.txt
+            ├── uksc-2014-0251.txt
+            ├── uksc-2014-0252.txt
+            ├── uksc-2014-0255.txt
+            ├── uksc-2014-0264.txt
+            ├── uksc-2014-0270.txt
+            ├── uksc-2014-0272.txt
+            ├── uksc-2014-0273.txt
+            ├── uksc-2014-0275.txt
+            ├── uksc-2015-0002.txt
+            ├── uksc-2015-0009.txt
+            ├── uksc-2015-0011.txt
+            ├── uksc-2015-0015.txt
+            ├── uksc-2015-0017.txt
+            ├── uksc-2015-0021.txt
+            ├── uksc-2015-0022.txt
+            ├── uksc-2015-0025.txt
+            ├── uksc-2015-0027.txt
+            ├── uksc-2015-0036.txt
+            ├── uksc-2015-0044.txt
+            ├── uksc-2015-0045.txt
+            ├── uksc-2015-0048.txt
+            ├── uksc-2015-0050.txt
+            ├── uksc-2015-0053.txt
+            ├── uksc-2015-0061.txt
+            ├── uksc-2015-0069.txt
+            ├── uksc-2015-0073.txt
+            ├── uksc-2015-0075.txt
+            ├── uksc-2015-0080.txt
+            ├── uksc-2015-0091.txt
+            ├── uksc-2015-0092.txt
+            ├── uksc-2015-0095.txt
+            ├── uksc-2015-0099.txt
+            ├── uksc-2015-0110.txt
+            ├── uksc-2015-0113.txt
+            ├── uksc-2015-0115.txt
+            ├── uksc-2015-0122.txt
+            ├── uksc-2015-0125.txt
+            ├── uksc-2015-0126.txt
+            ├── uksc-2015-0127.txt
+            ├── uksc-2015-0129.txt
+            ├── uksc-2015-0134.txt
+            ├── uksc-2015-0135.txt
+            ├── uksc-2015-0137.txt
+            ├── uksc-2015-0142.txt
+            ├── uksc-2015-0143.txt
+            ├── uksc-2015-0147.txt
+            ├── uksc-2015-0148.txt
+            ├── uksc-2015-0152.txt
+            ├── uksc-2015-0153.txt
+            ├── uksc-2015-0154.txt
+            ├── uksc-2015-0160.txt
+            ├── uksc-2015-0161.txt
+            ├── uksc-2015-0166.txt
+            ├── uksc-2015-0170.txt
+            ├── uksc-2015-0175.txt
+            ├── uksc-2015-0176.txt
+            ├── uksc-2015-0181.txt
+            ├── uksc-2015-0199.txt
+            ├── uksc-2015-0203.txt
+            ├── uksc-2015-0209.txt
+            ├── uksc-2015-0212.txt
+            ├── uksc-2015-0215.txt
+            ├── uksc-2015-0219.txt
+            ├── uksc-2015-0220.txt
+            ├── uksc-2015-0224.txt
+            ├── uksc-2015-0230.txt
+            ├── uksc-2015-0233.txt
+            ├── uksc-2015-0236.txt
+            ├── uksc-2015-0243.txt
+            ├── uksc-2015-0246.txt
+            ├── uksc-2015-0247.txt
+            ├── uksc-2015-0248.txt
+            ├── uksc-2016-0003.txt
+            ├── uksc-2016-0006.txt
+            ├── uksc-2016-0007.txt
+            ├── uksc-2016-0009.txt
+            ├── uksc-2016-0010.txt
+            ├── uksc-2016-0013.txt
+            ├── uksc-2016-0015.txt
+            ├── uksc-2016-0023.txt
+            ├── uksc-2016-0026.txt
+            ├── uksc-2016-0039.txt
+            ├── uksc-2016-0041.txt
+            ├── uksc-2016-0042.txt
+            ├── uksc-2016-0053.txt
+            ├── uksc-2016-0054.txt
+            ├── uksc-2016-0062.txt
+            ├── uksc-2016-0069.txt
+            ├── uksc-2016-0070.txt
+            ├── uksc-2016-0073.txt
+            ├── uksc-2016-0076.txt
+            ├── uksc-2016-0079.txt
+            ├── uksc-2016-0083.txt
+            ├── uksc-2016-0084.txt
+            ├── uksc-2016-0086.txt
+            ├── uksc-2016-0090.txt
+            ├── uksc-2016-0100.txt
+            ├── uksc-2016-0102.txt
+            ├── uksc-2016-0107.txt
+            ├── uksc-2016-0111.txt
+            ├── uksc-2016-0121.txt
+            ├── uksc-2016-0130.txt
+            ├── uksc-2016-0132.txt
+            ├── uksc-2016-0136.txt
+            ├── uksc-2016-0137.txt
+            ├── uksc-2016-0140.txt
+            ├── uksc-2016-0142.txt
+            ├── uksc-2016-0144.txt
+            ├── uksc-2016-0148.txt
+            ├── uksc-2016-0150.txt
+            ├── uksc-2016-0152.txt
+            ├── uksc-2016-0155.txt
+            ├── uksc-2016-0156.txt
+            ├── uksc-2016-0157.txt
+            ├── uksc-2016-0159.txt
+            ├── uksc-2016-0164.txt
+            ├── uksc-2016-0165.txt
+            ├── uksc-2016-0166.txt
+            ├── uksc-2016-0170.txt
+            ├── uksc-2016-0174.txt
+            ├── uksc-2016-0185.txt
+            ├── uksc-2016-0188.txt
+            ├── uksc-2016-0192.txt
+            ├── uksc-2016-0195.txt
+            ├── uksc-2016-0196.txt
+            ├── uksc-2016-0197.txt
+            ├── uksc-2016-0204.txt
+            ├── uksc-2016-0209.txt
+            ├── uksc-2016-0212.txt
+            ├── uksc-2016-0214.txt
+            ├── uksc-2016-0218.txt
+            ├── uksc-2016-0219.txt
+            ├── uksc-2016-0220.txt
+            ├── uksc-2016-0223.txt
+            ├── uksc-2016-0226.txt
+            ├── uksc-2016-0227.txt
+            ├── uksc-2016-0228.txt
+            ├── uksc-2017-0003.txt
+            ├── uksc-2017-0016.txt
+            ├── uksc-2017-0020.txt
+            ├── uksc-2017-0023.txt
+            ├── uksc-2017-0025.txt
+            ├── uksc-2017-0032.txt
+            ├── uksc-2017-0035.txt
+            ├── uksc-2017-0037.txt
+            ├── uksc-2017-0043.txt
+            ├── uksc-2017-0053.txt
+            ├── uksc-2017-0058.txt
+            ├── uksc-2017-0060.txt
+            ├── uksc-2017-0070.txt
+            ├── uksc-2017-0072.txt
+            ├── uksc-2017-0074.txt
+            ├── uksc-2017-0077.txt
+            ├── uksc-2017-0080.txt
+            ├── uksc-2017-0092.txt
+            ├── uksc-2017-0097.txt
+            ├── uksc-2017-0103.txt
+            ├── uksc-2017-0111.txt
+            ├── uksc-2017-0124.txt
+            ├── uksc-2017-0126.txt
+            ├── uksc-2017-0127.txt
+            ├── uksc-2017-0131.txt
+            ├── uksc-2017-0132.txt
+            ├── uksc-2017-0135.txt
+            ├── uksc-2017-0141.txt
+            ├── uksc-2017-0151.txt
+            ├── uksc-2017-0156.txt
+            ├── uksc-2017-0158.txt
+            ├── uksc-2017-0159.txt
+            ├── uksc-2017-0172.txt
+            ├── uksc-2017-0175.txt
+            ├── uksc-2017-0182.txt
+            ├── uksc-2017-0185.txt
+            ├── uksc-2017-0190.txt
+            ├── uksc-2017-0195.txt
+            ├── uksc-2017-0200.txt
+            ├── uksc-2017-0202.txt
+            ├── uksc-2017-0207.txt
+            ├── uksc-2017-0211.txt
+            ├── uksc-2017-0212.txt
+            ├── uksc-2017-0215.txt
+            ├── uksc-2018-0004.txt
+            ├── uksc-2018-0006.txt
+            ├── uksc-2018-0007.txt
+            ├── uksc-2018-0008.txt
+            ├── uksc-2018-0011.txt
+            ├── uksc-2018-0012.txt
+            ├── uksc-2018-0013.txt
+            ├── uksc-2018-0014.txt
+            ├── uksc-2018-0031.txt
+            ├── uksc-2018-0037.txt
+            ├── uksc-2018-0039.txt
+            ├── uksc-2018-0040.txt
+            ├── uksc-2018-0045.txt
+            ├── uksc-2018-0048.txt
+            ├── uksc-2018-0054.txt
+            ├── uksc-2018-0061.txt
+            ├── uksc-2018-0062.txt
+            ├── uksc-2018-0064.txt
+            ├── uksc-2018-0073.txt
+            ├── uksc-2018-0075.txt
+            ├── uksc-2018-0077.txt
+            ├── uksc-2018-0080.txt
+            ├── uksc-2018-0091.txt
+            ├── uksc-2018-0092.txt
+            ├── uksc-2018-0094.txt
+            ├── uksc-2018-0098.txt
+            ├── uksc-2018-0100.txt
+            ├── uksc-2018-0102.txt
+            ├── uksc-2018-0104.txt
+            ├── uksc-2018-0114.txt
+            ├── uksc-2018-0116.txt
+            ├── uksc-2018-0117.txt
+            ├── uksc-2018-0133.txt
+            ├── uksc-2018-0137.txt
+            ├── uksc-2018-0150.txt
+            ├── uksc-2018-0152.txt
+            ├── uksc-2018-0159.txt
+            ├── uksc-2018-0166.txt
+            ├── uksc-2018-0173.txt
+            ├── uksc-2018-0177.txt
+            ├── uksc-2018-0178.txt
+            ├── uksc-2018-0184.txt
+            ├── uksc-2018-0187.txt
+            ├── uksc-2018-0194.txt
+            ├── uksc-2018-0197.txt
+            ├── uksc-2018-0200.txt
+            ├── uksc-2018-0203.txt
+            ├── uksc-2018-0208.txt
+            ├── uksc-2018-0211.txt
+            ├── uksc-2018-0213.txt
+            ├── uksc-2018-0214.txt
+            ├── uksc-2018-0218.txt
+            ├── uksc-2018-0224.txt
+            ├── uksc-2018-0226.txt
+            ├── uksc-2018-0229.txt
+            ├── uksc-2018-0231.txt
+            ├── uksc-2019-0006.txt
+            ├── uksc-2019-0010.txt
+            ├── uksc-2019-0013.txt
+            ├── uksc-2019-0032.txt
+            ├── uksc-2019-0036.txt
+            ├── uksc-2019-0057.txt
+            ├── uksc-2019-0063.txt
+            ├── uksc-2019-0089.txt
+            ├── uksc-2019-0094.txt
+            ├── uksc-2019-0118.txt
+            ├── uksc-2019-0137.txt
+            ├── uksc-2019-0145.txt
+            ├── uksc-2019-0150.txt
+            ├── uksc-2019-0156.txt
+            ├── uksc-2019-0162.txt
+            ├── uksc-2020-0022.txt
+            └── uksc-2020-0091.txt
+
+26 directories, 15802 files
