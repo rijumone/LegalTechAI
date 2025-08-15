@@ -175,3 +175,5 @@ secrets.toml
 peoplearchive*.json
 *.txt
 hf-models/
+
+mlruns/
