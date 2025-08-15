@@ -29,6 +29,12 @@ def summarize(input_judgement, input_summary, model, technique, num_sentences, c
     if technique == 'extractive':
         print(f"🔍 Running LexRank to extract {num_sentences} key sentences...")
         final_summary = lexrank_summary(text, num_sentences=num_sentences)
+        """
+        lexrank_summary is an extractive summarization technique that uses the LexRank algorithm. 
+        This algorithm identifies the most important sentences in a text by constructing a graph 
+        where sentences are nodes and the edges are based on cosine similarity. The sentences with 
+        the highest "centrality" in this graph are chosen for the summary.
+        """
         technique_name = 'extractive'
     elif technique == 'abstractive':
         if not model:
@@ -36,8 +42,21 @@ def summarize(input_judgement, input_summary, model, technique, num_sentences, c
         print(f"🧠 Running {model.upper()} abstractive summarization...")
         if model == 'bart':
             final_summary = bart_chunked_summary(text, chunk_size=chunk_size)
+            """
+            bart_chunked_summary is an abstractive summarization method that uses the BART 
+            (Bidirectional and Auto-Regressive Transformers) model. Since BART has a limit 
+            on the number of tokens it can process at once, this function breaks the input 
+            text into smaller chunks. It summarizes each chunk individually and then combines 
+            these partial summaries to create the final summary.
+            """
         elif model == 'pegasus':
             final_summary = pegasus_chunked_summary(text, chunk_size=chunk_size)
+            """
+            pegasus_chunked_summary is another abstractive summarization method, similar to 
+            the BART-based one, but it uses the PEGASUS model, which is specifically designed 
+            for abstractive summarization. It also processes the text in chunks to handle 
+            long documents and then combines the summaries of each chunk.
+            """
         technique_name = f'abstractive_{model}'
     else:
         raise ValueError("Invalid technique. Choose 'extractive' or 'abstractive'.")
