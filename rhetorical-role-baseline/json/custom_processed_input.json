@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "data": {
+            "text": "input_text_1"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "value": {
+                            "start": 0,
+                            "end": 12,
+                            "text": "input_text_1",
+                            "labels": []
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "data": {
+            "text": "input_text_2"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "value": {
+                            "start": 0,
+                            "end": 12,
+                            "text": "input_text_2",
+                            "labels": []
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
